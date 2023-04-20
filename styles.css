@@ -73,12 +73,13 @@ a:hover {
 }
 
 .semi-link {
-    margin-top: -2.5rem;
+    margin-top: -2rem;
 }
 
 #text {
     color: thistle;
     font-size: small;
+    padding-bottom: -5rem;
 }
 
 .main__container {
@@ -89,7 +90,7 @@ a:hover {
 .small-nav {
     line-height: 1px;
     text-align: right;
-    margin-bottom: 8rem;
+    margin-bottom: 7rem;
 }
 
 .fa-icon__phone {
@@ -312,32 +313,23 @@ span {
 /* footer */
 
 .footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     width: 100%;
-    align-items: center;
     color: #333333bb;
     font-size: 15px;
-    margin: 1rem;
 }
 
-.footer-cont-1 {
-    width: 42.5%;
-    display: flex;
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5 {
+    padding: 18px;
 }
 
-.footer-cont-1-text {
-    margin-top: 1rem;
-}
-
-.footer-cont-2 {
-    width: 32.5%;
-    display: flex;
-}
-
-.footer-cont-3 {
-    width: 30%;
+.box-1 {
+    padding-top: 40px;
 }
 
 .span-cont {
@@ -357,8 +349,13 @@ h4 {
     color: #1cb5bd;
 }
 
+
+/* .select-cont {
+    margin: 2rem;
+} */
+
 select {
-    width: 10rem;
+    width: 100px;
     height: 30px;
     border-color: #1cb5bd;
     color: #333333bb;
@@ -366,7 +363,7 @@ select {
 
 .social-icons {
     display: flex;
-    margin: 2rem;
+    margin: 1.5rem;
     justify-content: space-between;
     font-size: 24px;
 }
@@ -416,6 +413,9 @@ select {
         padding: 3rem 5rem;
         margin-top: -5rem;
     }
+    #text {
+        margin-top: 1rem;
+    }
     .fa-icon__phone {
         font-size: 13px;
     }
@@ -450,5 +450,8 @@ select {
         width: 97%;
         height: 100%;
         margin: 0;
+    }
+    .social-icons {
+        justify-content: space-between;
     }
 }
